@@ -1,0 +1,1 @@
+Flutter是一个对跨平台移动开发非常友好的框架，发展极其地迅速，如果你想开发同时可以运行在Android和iOS，甚至Web和Windows，Linux，MacOS的应用，就赶快加入吧。Google官方提供的Widget实在是非常多，然而并不是对每个Widget都提供了示例，目前也已经有类似的应用，但是并不满足我的需求，我想有一个类似于备忘录一样的东西，方便我随时查询Widget的用法和效果，所以Flutter Book诞生了。Flutter Book提供了官方文档中Widget Index列出的绝大部分Widget的使用示例，点击相应Widget查看UI或者Code，Flutter Book会持续的添加新功能和遗漏或者新的Widget，以及一些好文好库的推荐。
