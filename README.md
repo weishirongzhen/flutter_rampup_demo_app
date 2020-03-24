@@ -1,7 +1,8 @@
 
 # Flutter 150+ widget 示例
 
-Android用户可直接下载安装flutter_book.apk
+Android用户可直接下载安装
+[flutter_book.apk](https://github.com/memtopia/flutter_rampup_demo_app/raw/master/flutter_book.apk)
 iOS用户请自行运行打包安装使用
 
 demo 中 包含了Flutter官方150+的 widget示例
