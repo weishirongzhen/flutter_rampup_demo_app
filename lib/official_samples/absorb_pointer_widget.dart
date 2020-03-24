@@ -11,6 +11,7 @@ class AbsorbPointerWidget extends BaseSampleStatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
+
         ///参照代码，让 button不可点击
         Column(
           children: <Widget>[
