@@ -20,17 +20,30 @@ class _AnimatedIconWidget extends BaseSampleStatefulWidgetState<AnimatedIconWidg
     return AnimatedIconWidget.name;
   }
 
-  //<code>
+//<code>
+  AnimationController _animation;
+  bool _change = true;
+
+  @override
+  void initState() {
+    _animation = AnimationController(vsync: this)..duration = Duration(milliseconds: 500);
+    super.initState();
+  }
 
   @override
   Widget buildBody(BuildContext context) {
     return Center(
-      child: AnimatedIcon(
-        icon: AnimatedIcons.arrow_menu,
-        progress: AnimationController(vsync: this)
-          ..drive(Tween(begin: 0, end: 1))
-          ..duration = Duration(milliseconds: 1000)
-          ..repeat(),
+      child: GestureDetector(
+        onTap: () {
+          _change = !_change;
+          _change ? _animation.forward() : _animation.reverse();
+        },
+        child: AnimatedIcon(
+          size: 100,
+          color: Colors.lightBlue,
+          icon: AnimatedIcons.arrow_menu,
+          progress: _animation,
+        ),
       ),
     );
   }
