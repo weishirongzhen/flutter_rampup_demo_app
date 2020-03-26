@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutterrampupdemoapp/offcial_widgets_page.dart';
 import 'package:flutterrampupdemoapp/official_samples.dart';
-import 'package:flutterrampupdemoapp/providers/widgets_provider.dart';
 import 'package:flutterrampupdemoapp/search_page.dart';
 import 'package:provider/provider.dart';
 
@@ -71,9 +70,7 @@ class _WidgetsPageState extends State<WidgetsPage> with AutomaticKeepAliveClient
           ),
         ),
       ),
-      body: Consumer<WidgetsCollectionProvider>(builder: (context, provider, _) {
-        return OfficialWidgetsPage();
-      }),
+      body: OfficialWidgetsPage(),
     );
   }
 

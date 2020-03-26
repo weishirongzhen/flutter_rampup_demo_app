@@ -99,24 +99,24 @@ class ContainerWidget extends BaseSampleStatelessWidget {
             ),
 
             ///径向渐变
-            Container(
-              margin: EdgeInsets.all(8),
-              width: 200,
-              height: 100,
-              decoration: BoxDecoration(
-                gradient: RadialGradient(
-                  colors: [
-                    Color(0xFFFFFF00),
-                    Color(0xFF00FF00),
-                    Color(0xFF00FFFF),
-                  ],
-                  radius: 0.2,
-                  tileMode: TileMode.mirror,
-                ),
-                color: Colors.blueGrey,
-              ),
-              child: Text('container5'),
-            ),
+//            Container(
+//              margin: EdgeInsets.all(8),
+//              width: 200,
+//              height: 100,
+//              decoration: BoxDecoration(
+//                gradient: RadialGradient(
+//                  colors: [
+//                    Color(0xFFFFFF00),
+//                    Color(0xFF00FF00),
+//                    Color(0xFF00FFFF),
+//                  ],
+//                  radius: 0.2,
+//                  tileMode: TileMode.mirror,
+//                ),
+//                color: Colors.blueGrey,
+//              ),
+//              child: Text('container5'),
+//            ),
 
             ///扫描渐变，圆形形状
             Container(

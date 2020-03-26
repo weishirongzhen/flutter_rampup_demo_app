@@ -51,18 +51,21 @@ class AlignWidget extends BaseSampleStatelessWidget {
         SizedBox(
           height: 20,
         ),
+        SizedBox(
+          height: 50,
+        ),
 
-        ///宽度为原始的0.5倍， 此时Text 位置已经改变， 更多请参考 ClipRect
+        ///宽度为原始的0.7倍， 此时Text 位置已经改变， 更多请参考 ClipRect
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Align(
               alignment: Alignment.topLeft,
               widthFactor: 0.7,
-              child: Image.asset(
-                'assets/images/butterfly.webp',
-                width: 200,
-                height: 200,
+              child: Container(
+                width: 100,
+                height: 100,
+                color: Colors.pinkAccent,
               ),
             ),
             Text("Hello Flutter"),
