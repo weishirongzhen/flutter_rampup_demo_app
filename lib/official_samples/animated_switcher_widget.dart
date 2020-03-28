@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutterrampupdemoapp/official_samples/base_sample_stateful_widget.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class AnimatedSwitcherWidget extends BaseSampleStatefulWidget {
   static String name = 'AnimatedSwitcher';
@@ -32,14 +31,16 @@ class _AnimatedSwitcherWidget extends BaseSampleStatefulWidgetState<AnimatedSwit
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
           AnimatedSwitcher(
-            duration: const Duration(milliseconds: 200),
+            duration: const Duration(milliseconds: 500),
+            switchInCurve: Curves.easeIn,
+            switchOutCurve: Curves.easeInOut,
             transitionBuilder: (Widget child, Animation<double> animation) {
               return ScaleTransition(child: child, scale: animation);
             },
             child: Text(
               '$_count',
               key: ValueKey<int>(_count),
-              style: GoogleFonts.sigmarOne(fontSize: 100),
+              style: TextStyle(fontSize: 100),
             ),
           ),
           RaisedButton(
