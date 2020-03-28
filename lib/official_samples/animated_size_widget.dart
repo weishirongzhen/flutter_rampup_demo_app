@@ -32,15 +32,16 @@ class _AnimatedSizeWidget extends BaseSampleStatefulWidgetState<AnimatedSizeWidg
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
         Container(
-          height: 300,
+          height: 200,
           child: Center(
             child: AnimatedSize(
               duration: const Duration(milliseconds: 500),
-              curve: Curves.easeInOut,
+              reverseDuration: const Duration(milliseconds: 200),
+              curve: Curves.easeIn,
               child: Container(
                 width: _width,
                 height: _height,
-                color: Colors.blue,
+                color: Colors.red,
               ),
               vsync: this,
             ),
@@ -53,7 +54,7 @@ class _AnimatedSizeWidget extends BaseSampleStatefulWidgetState<AnimatedSizeWidg
           child: const Text('Click me!'),
           onPressed: () {
             setState(() {
-              _width = _change ? 270 : 200;
+              _width = _change ? 100 : 200;
               _height = _change ? 100 : 200;
               _change = !_change;
             });

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutterrampupdemoapp/official_samples/base_sample_stateful_widget.dart';
 
+
 class AnimatedListWidget extends BaseSampleStatefulWidget {
   static String name = 'AnimatedList';
   static String route = '/ui/AnimatedList';
@@ -10,6 +11,9 @@ class AnimatedListWidget extends BaseSampleStatefulWidget {
 }
 
 class _AnimatedListWidget extends BaseSampleStatefulWidgetState<AnimatedListWidget> {
+
+
+
   @override
   String getFilePath() {
     return 'lib/official_samples/animated_list_widget.dart';
@@ -46,7 +50,7 @@ class _AnimatedListWidget extends BaseSampleStatefulWidgetState<AnimatedListWidg
   @override
   Widget buildBody(BuildContext context) {
     return SafeArea(
-      child: Column(
+      child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
           Expanded(
@@ -61,9 +65,8 @@ class _AnimatedListWidget extends BaseSampleStatefulWidgetState<AnimatedListWidg
               ),
             ),
           ),
-          Row(
+          Column(
             crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
               RaisedButton(
                 onPressed: () {

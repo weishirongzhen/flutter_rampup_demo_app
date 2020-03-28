@@ -26,38 +26,40 @@ class _AnimatedPhysicalModelWidget extends BaseSampleStatefulWidgetState<Animate
 
   @override
   Widget buildBody(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: <Widget>[
-        ///点击后 改变Z轴海拔高度
-        AnimatedPhysicalModel(
-          duration: const Duration(milliseconds: 500),
-          curve: Curves.easeOutQuad,
-          elevation: _change ? 0 : 20,
-          shape: BoxShape.rectangle,
-          shadowColor: Colors.redAccent,
-          color: Colors.white,
-          child: Container(
-            height: 200,
-            width: 200,
-            color: Colors.blue[50],
-            child: FlutterLogo(
-              size: 60,
+    return Center(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>[
+          ///点击后 改变Z轴海拔高度
+          AnimatedPhysicalModel(
+            duration: const Duration(milliseconds: 500),
+            curve: Curves.easeOutQuad,
+            elevation: _change ? 0 : 20,
+            shape: BoxShape.rectangle,
+            shadowColor: Colors.redAccent,
+            color: Colors.white,
+            child: Container(
+              height: 200,
+              width: 200,
+              color: Colors.blue[50],
+              child: FlutterLogo(
+                size: 60,
+              ),
             ),
           ),
-        ),
-        SizedBox(
-          height: 20,
-        ),
-        RaisedButton(
-          child: const Text('Click me'),
-          onPressed: () {
-            setState(() {
-              _change = !_change;
-            });
-          },
-        ),
-      ],
+          SizedBox(
+            height: 20,
+          ),
+          RaisedButton(
+            child: const Text('Click me'),
+            onPressed: () {
+              setState(() {
+                _change = !_change;
+              });
+            },
+          ),
+        ],
+      ),
     );
   }
 //<code>

@@ -26,34 +26,36 @@ class _AnimatedPaddingWidget extends BaseSampleStatefulWidgetState<AnimatedPaddi
 
   @override
   Widget buildBody(BuildContext context) {
-    return Column(
-      mainAxisSize: MainAxisSize.min,
-      children: <Widget>[
-        Container(
-          height: 200.0,
-          width: 200.0,
-          color: Colors.blue,
-          child: AnimatedPadding(
-            duration: Duration(milliseconds: 500),
-            padding: _padding,
-            curve: Curves.easeOutQuad,
-            child: Container(
-              color: Colors.redAccent,
+    return Center(
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: <Widget>[
+          Container(
+            height: 200.0,
+            width: 200.0,
+            color: Colors.blue,
+            child: AnimatedPadding(
+              duration: Duration(milliseconds: 500),
+              padding: _padding,
+              curve: Curves.easeOutQuad,
+              child: Container(
+                color: Colors.blueGrey,
+              ),
             ),
           ),
-        ),
-        RaisedButton(
-          onPressed: () {
-            setState(() {
-              _change = !_change;
-              _padding = _change == true ? EdgeInsets.all(50) : EdgeInsets.all(0);
-            });
-          },
-          child: Text(
-            "Click me",
-          ),
-        )
-      ],
+          RaisedButton(
+            onPressed: () {
+              setState(() {
+                _change = !_change;
+                _padding = _change == true ? EdgeInsets.all(20) : EdgeInsets.all(0);
+              });
+            },
+            child: Text(
+              "Click me",
+            ),
+          )
+        ],
+      ),
     );
   }
 //<code>
