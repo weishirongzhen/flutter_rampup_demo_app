@@ -11,7 +11,7 @@ class AspectRatioWidget extends BaseSampleStatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
-        ///长宽比 4:3
+
         Container(
           height: 100,
           child: AspectRatio(
@@ -22,7 +22,6 @@ class AspectRatioWidget extends BaseSampleStatelessWidget {
           ),
         ),
 
-        ///长宽比 4:2
         Container(
           height: 100,
           child: AspectRatio(
@@ -33,16 +32,16 @@ class AspectRatioWidget extends BaseSampleStatelessWidget {
           ),
         ),
 
-        ///长宽比 8:1
-        Container(
-          width: 220,
-          child: AspectRatio(
-            aspectRatio: 8 / 1,
-            child: Container(
-              color: Colors.blueGrey,
-            ),
-          ),
-        )
+//        ///长宽比 8:1
+//        Container(
+//          width: 220,
+//          child: AspectRatio(
+//            aspectRatio: 8 / 1,
+//            child: Container(
+//              color: Colors.blueGrey,
+//            ),
+//          ),
+//        )
       ],
     );
     //<code>

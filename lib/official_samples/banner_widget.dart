@@ -15,8 +15,8 @@ class BannerWidget extends BaseSampleStatelessWidget {
           height: 100,
           child: Banner(
             message: "Flutter",
-            location: BannerLocation.topEnd,
-            color: Colors.red,
+            location: BannerLocation.topStart,
+            color: Colors.deepPurpleAccent,
             child: Container(
               color: Colors.blueGrey,
               height: 100,
