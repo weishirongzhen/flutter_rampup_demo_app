@@ -11,9 +11,22 @@ class BottomAppBarWidget extends BaseSampleStatelessWidget {
 
     ///底部栏
     return Scaffold(
+      floatingActionButtonLocation: FloatingActionButtonLocation.endDocked,
+      floatingActionButton: FloatingActionButton(
+        child: Text('OK'),
+        onPressed: () {},
+      ),
       bottomNavigationBar: BottomAppBar(
-        color: Colors.grey,
-        child: Text('Hello Flutter'),
+        elevation: 10,
+        notchMargin: 10,
+        shape: CircularNotchedRectangle(),
+        color: Colors.blueGrey,
+        child: SizedBox(
+            height: 100,
+            child: Text(
+              'Hello Flutter',
+              style: TextStyle(fontSize: 50),
+            )),
       ),
     );
     //<code>

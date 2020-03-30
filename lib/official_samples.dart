@@ -21,7 +21,6 @@ import 'package:flutterrampupdemoapp/official_samples/banner_widget.dart';
 import 'package:flutterrampupdemoapp/official_samples/baseline_widget.dart';
 import 'package:flutterrampupdemoapp/official_samples/bottom_app_bar_widget.dart';
 import 'package:flutterrampupdemoapp/official_samples/bottom_navigation_bar_widget.dart';
-import 'package:flutterrampupdemoapp/official_samples/bottom_sheet_widget.dart';
 import 'package:flutterrampupdemoapp/official_samples/button_bar_widget.dart';
 import 'package:flutterrampupdemoapp/official_samples/card_widget.dart';
 import 'package:flutterrampupdemoapp/official_samples/center_widget.dart';
@@ -191,7 +190,6 @@ class OfficialSamples {
     routes[BaselineWidget.route] = (_) => BaselineWidget();
     routes[BottomAppBarWidget.route] = (_) => BottomAppBarWidget();
     routes[BottomNavigationBarWidget.route] = (_) => BottomNavigationBarWidget();
-    routes[BottomSheetWidget.route] = (_) => BottomSheetWidget();
     routes[ButtonBarWidget.route] = (_) => ButtonBarWidget();
     routes[CardWidget.route] = (_) => CardWidget();
     routes[CenterWidget.route] = (_) => CenterWidget();
@@ -344,7 +342,6 @@ class OfficialSamples {
     sample.add(SampleDetail(BaselineWidget.name, BaselineWidget.route, '根据Widget基线放置其Child的Widget。'));
     sample.add(SampleDetail(BottomAppBarWidget.name, BottomAppBarWidget.route, '固定的底部栏'));
     sample.add(SampleDetail(BottomNavigationBarWidget.name, BottomNavigationBarWidget.route, '底部导航栏'));
-    sample.add(SampleDetail(BottomSheetWidget.name, BottomSheetWidget.route, '显示底部弹出提示框'));
     sample.add(SampleDetail(ButtonBarWidget.name, ButtonBarWidget.route, '按钮栏'));
     sample.add(SampleDetail(CardWidget.name, CardWidget.route, '卡片'));
     sample.add(SampleDetail(CenterWidget.name, CenterWidget.route, '居中子控件'));

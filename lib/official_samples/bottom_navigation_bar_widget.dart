@@ -47,6 +47,8 @@ class _BottomNavigationBarWidget extends BaseSampleStatefulWidgetState<BottomNav
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Colors.pinkAccent.withOpacity(0.5),
+        type: BottomNavigationBarType.fixed,
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
@@ -62,6 +64,7 @@ class _BottomNavigationBarWidget extends BaseSampleStatefulWidgetState<BottomNav
           ),
         ],
         currentIndex: _selectedIndex,
+        unselectedItemColor: Colors.grey,
         selectedItemColor: Colors.blue,
         onTap: (index) {
           setState(() {
